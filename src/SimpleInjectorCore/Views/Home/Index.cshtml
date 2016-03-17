@@ -1,0 +1,12 @@
+﻿@model IEnumerable<SimpleInjectorCore.Models.Pessoa>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@foreach (var item in Model)
+{
+    <ul>
+        <li>Id: @item.Id </li>
+        <li>Nome: @item.Nome</li>
+    </ul>
+}
